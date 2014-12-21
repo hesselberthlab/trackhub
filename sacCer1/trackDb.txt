@@ -2,7 +2,7 @@ track Replication
 superTrack on
 shortLabel Replication
 longLabel DNA replication data & annotations 
-type bigBed 6
+type bigBed 6 .
 visibility dense
 
     track Timing
@@ -10,12 +10,12 @@ visibility dense
     container multiWig
     aggregate transparentOverlay
     showSubtrackColorOnUi on
-    shortLabel Timing
+    shortLabel Trep 
     longLabel DNA replication timing 
     type bigWig 
     autoScale on
     maxHeightPixels 32:64:11
-    visibility full
+    visibility hide
 
         track Yabuki
         parent Timing
@@ -23,7 +23,6 @@ visibility dense
         longLabel Timing by copy number (Yabuki et al. 2002)
         bigDataUrl dna-replication/timing/yabuki.timing.bw
         color 118,42,131
-        visibility hide
         autoScale on
         type bigWig
 
@@ -33,20 +32,19 @@ visibility dense
         longLabel Timing by heavy/light (Raghu et al. 2001)
         bigDataUrl dna-replication/timing/raghu.timing.bw
         color 27,120,55
+        visibility full
         autoScale on
         type bigWig
 
     track OriDB
     parent Replication
-    type bigBed 6
+    type bigBed 6 .
     searchIndex name
     visibility pack
     bigDataUrl dna-replication/oridb.bb
     shortLabel OriDB
-    longLabel OriDB - origin annotations
     spectrum on
-    minGrayLevel 4
-    color 51,60,144
+    longLabel OriDB - origin annotations
 
     track ChIP
     parent Replication
@@ -68,7 +66,6 @@ visibility dense
         subGroups protein=MCM2 study=XU
         shortLabel Mcm2/Xu
         longLabel Mcm2 ChIP-chip (Xu et al. 2006)
-        viewLimits 0:15
         alwaysZero on
         color 244,109,67
 
@@ -79,7 +76,6 @@ visibility dense
         subGroups protein=ORC1 study=XU
         shortLabel Orc1/Xu
         longLabel Orc1 ChIP-chip (Xu et al. 2006)
-        viewLimits 0:15
         alwaysZero on
         color 102,189,99
 
@@ -89,8 +85,7 @@ visibility dense
         bigDataUrl dna-replication/chip/bell-orc1.bw
         subGroups protein=ORC1 study=BELL
         shortLabel Orc1/Bell
-        longLabel Orc1 ChIP-seq in G2 (XXX et al. XXX)
-        viewLimits 0:150
+        longLabel Orc1 ChIP-seq in G2 (Eaton et al. (2010))
         alwaysZero on
         color 26,152,80
 
@@ -106,6 +101,7 @@ visibility dense
     type bigWig
     visibility dense
     graphTypeDefault bar
+    windowingFunction mean
     smoothingWindow 12
     autoScale on
     maxHeightPixels 32:64:11
@@ -226,4 +222,553 @@ longLabel mRNA gene models and analysis
         color 5,113,176
         type bigWig
         viewLimits 0:1e-6
+
+    track Ribosome-Footprints
+    parent mRNA
+    compositeTrack on
+    shortLabel Ribosome footprints
+    longLabel Ribosome Footprints Coverage and Peaks tracks
+    subGroup1 view Views COV=Coverage
+    subGroup2 strain Strain WT=wild-type DOM=dom34KO SKI=ski2KO HBS=hbs1KO
+    subGroup3 treatment Treatment NONE=None CHX=CHX MG=high-Mg2+ DIAM=diamde GP=GMP-PNP CGP=CHX+GMP-PNP LG=low-glucose TR=suppressor-tRNA AT=3-AT
+    subGroup4 strand Strand pos=pos neg=neg
+    subGroup5 size Size UNF=unfractionated SHR=short DIS=disome
+    dimensions dimX=treatment dimY=strain dimA=strand dimB=size
+    filterComposite dimA dimB
+    sortOrder view=- strand=+
+    type bed 6 .
+
+        track Coverage
+        view COV
+        parent Ribosome-Footprints
+        shortLabel Coverage
+        visibility full
+        type bigWig
+        autoScale on
+
+            track SRR1042853.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042853.pos.bw
+            shortLabel WT.CHX.UNF
+            longLabel SRR1042853 wild-type CHX pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042853.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=CHX size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042853.neg.bw
+            shortLabel WT.CHX.UNF
+            longLabel SRR1042853 wild-type CHX neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042854.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=CHX size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042854.pos.bw
+            shortLabel DOM.CHX.UNF
+            longLabel SRR1042854 dom34KO CHX pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042854.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=CHX size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042854.neg.bw
+            shortLabel DOM.CHX.UNF
+            longLabel SRR1042854 dom34KO CHX neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042855.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042855.pos.bw
+            shortLabel WT.NONE.UNF
+            longLabel SRR1042855 wild-type no additive pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042855.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042855.neg.bw
+            shortLabel WT.NONE.UNF
+            longLabel SRR1042855 wild-type no additive neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042856.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042856.pos.bw
+            shortLabel DOM.NONE.UNF
+            longLabel SRR1042856 dom34KO no additive pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042856.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042856.neg.bw
+            shortLabel DOM.NONE.UNF
+            longLabel SRR1042856 dom34KO no additive neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042857.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CGP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042857.pos.bw
+            shortLabel WT.CGP.UNF
+            longLabel SRR1042857 wild-type CHX+GMP-PNP pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042857.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=CGP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042857.neg.bw
+            shortLabel WT.CGP.UNF
+            longLabel SRR1042857 wild-type CHX+GMP-PNP neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042858.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=GP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042858.pos.bw
+            shortLabel WT.GP.UNF
+            longLabel SRR1042858 wild-type GMP-PNP pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042858.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=GP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042858.neg.bw
+            shortLabel WT.GP.UNF
+            longLabel SRR1042858 wild-type GMP-PNP neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042859.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=MG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042859.pos.bw
+            shortLabel WT.MG.UNF
+            longLabel SRR1042859 wild-type high Mg++ pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042859.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=MG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042859.neg.bw
+            shortLabel WT.MG.UNF
+            longLabel SRR1042859 wild-type high Mg++ neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042860.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=CGP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042860.pos.bw
+            shortLabel DOM.CGP.UNF
+            longLabel SRR1042860 dom34KO CHX+GMP-PNP pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042860.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=CGP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042860.neg.bw
+            shortLabel DOM.CGP.UNF
+            longLabel SRR1042860 dom34KO CHX+GMP-PNP neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042861.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=GP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042861.pos.bw
+            shortLabel DOM.GP.UNF
+            longLabel SRR1042861 dom34KO GMP-PNP pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042861.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=GP size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042861.neg.bw
+            shortLabel DOM.GP.UNF
+            longLabel SRR1042861 dom34KO GMP-PNP neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042862.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=MG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042862.pos.bw
+            shortLabel DOM.MG.UNF
+            longLabel SRR1042862 dom34KO high Mg++ pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042862.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=MG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042862.neg.bw
+            shortLabel DOM.MG.UNF
+            longLabel SRR1042862 dom34KO high Mg++ neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042863.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=SKI strand=pos treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042863.pos.bw
+            shortLabel SKI.NONE.UNF
+            longLabel SRR1042863 ski2KO pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042863.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=SKI strand=neg treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042863.neg.bw
+            shortLabel SKI.NONE.UNF
+            longLabel SRR1042863 ski2KO neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042864.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=AT size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042864.pos.bw
+            shortLabel WT.AT.UNF
+            longLabel SRR1042864 wild-type 3-AT pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042864.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=AT size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042864.neg.bw
+            shortLabel WT.AT.UNF
+            longLabel SRR1042864 wild-type 3-AT neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042865.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=AT size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042865.pos.bw
+            shortLabel DOM.AT.UNF
+            longLabel SRR1042865 dom34KO 3-AT pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042865.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=AT size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042865.neg.bw
+            shortLabel DOM.AT.UNF
+            longLabel SRR1042865 dom34KO 3-AT neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042868.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=DI size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042868.pos.bw
+            shortLabel WT.DI.UNF
+            longLabel SRR1042868 wild-type diamide pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042868.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=DI size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042868.neg.bw
+            shortLabel WT.DI.UNF
+            longLabel SRR1042868 wild-type diamide neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042869.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=DI size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042869.pos.bw
+            shortLabel WT.DI.UNF
+            longLabel SRR1042869 dom34KO diamide pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042869.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=DI size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042869.neg.bw
+            shortLabel WT.DI.UNF
+            longLabel SRR1042869 dom34KO diamide neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042870.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=TR size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042870.pos.bw
+            shortLabel WT.TR.UNF
+            longLabel SRR1042870 wild-type suppressor tRNA pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042870.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=TR size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042870.neg.bw
+            shortLabel WT.TR.UNF
+            longLabel SRR1042870 wild-type suppressor tRNA neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042873.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=TR size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042873.pos.bw
+            shortLabel DOM.TR.UNF
+            longLabel SRR1042873 dom34KO suppressor tRNA pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042873.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=TR size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042873.neg.bw
+            shortLabel DOM.TR.UNF
+            longLabel SRR1042873 dom34KO suppressor tRNA neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042874.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=LG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042874.pos.bw
+            shortLabel DOM.LG.UNF
+            longLabel SRR1042874 dom34KO glucose starvation pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042874.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=LG size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042874.neg.bw
+            shortLabel DOM.LG.UNF
+            longLabel SRR1042874 dom34KO glucose starvation neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042875.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=HBS strand=pos treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042875.pos.bw
+            shortLabel HBS.NONE.UNF
+            longLabel SRR1042875 hbs1KO pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042875.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=HBS strand=neg treatment=NONE size=UNF
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042875.neg.bw
+            shortLabel HBS.NONE.UNF
+            longLabel SRR1042875 hbs1KO neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042876.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE size=SHR
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042876.pos.bw
+            shortLabel WT.NONE.SHR
+            longLabel SRR1042876 wild-type short footprints pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042876.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=NONE size=SHR
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042876.neg.bw
+            shortLabel WT.NONE.SHR
+            longLabel SRR1042876 wild-type short footprints neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042877.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=NONE size=SHR
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042877.pos.bw
+            shortLabel DOM.NONE.SHR
+            longLabel SRR1042877 dom34KO short footprints pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042877.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=NONE size=SHR
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042877.neg.bw
+            shortLabel DOM.NONE.SHR
+            longLabel SRR1042877 dom34KO short footprints neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042878.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE size=DIS
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042878.pos.bw
+            shortLabel WT.NONE.DIS
+            longLabel SRR1042878 wild-type disome footprints pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042878.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=NONE size=DIS
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042878.neg.bw
+            shortLabel WT.NONE.DIS
+            longLabel SRR1042878 wild-type disome footprints neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1042880.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=pos treatment=NONE size=DIS
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042880.pos.bw
+            shortLabel DOM.NONE.DIS
+            longLabel SRR1042880 dom34KO disome footprints pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042880.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=DOM strand=neg treatment=NONE size=DIS
+            bigDataUrl rna/ribosome-profiling/guydosh-dom34/SRR1042880.neg.bw
+            shortLabel DOM.NONE.DIS
+            longLabel SRR1042880 dom34KO disome footprints neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+    track Decay-intermediates 
+    compositeTrack on
+    parent mRNA
+    shortLabel mRNA-5P 
+    longLabel RNA 5'-P decay intermeidates in budding yeast (Harigaya & Parker (2012) PNAS)
+    subGroup1 strain Strain WT=WT MUT=dcp2/xrn1
+    subGroup2 replicate Replicate R1=Rep1 R2=Rep2 R3=Rep3
+    dimensions dimX=strain dimY=replicate
+    sortOrder strain=- replicate=+
+    maxHeightPixels 32:64:11
+    autoScale on
+    type bigWig
+    visibility dense
+
+        track WT-Rep1
+        parent Decay-intermediates
+        shortLabel WT-Rep1 
+        longLabel WT-Rep1 SRR502864
+        visibility full
+        subGroups strain=WT replicate=R1
+        bigDataUrl rna/decay-intermediates/SRR502864.bw
+        color 197,27,125
+        type bigWig
+
+        track WT-Rep2
+        parent Decay-intermediates
+        shortLabel WT-Rep2
+        longLabel WR-Rep2 SRR502865
+        visibility full
+        subGroups strain=WT replicate=R2
+        bigDataUrl rna/decay-intermediates/SRR502865.bw
+        color 197,27,125
+        type bigWig
+        visibility hide
+
+        track dcp2xrn1-Rep1
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep1
+        longLabel dcp2xrn1-Rep1 SRR502866
+        visibility full
+        subGroups strain=MUT replicate=R1
+        bigDataUrl rna/decay-intermediates/SRR502866.bw
+        color 77,146,33
+        type bigWig
+
+        track dcp2xrn1-Rep2
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep2
+        longLabel dcp2xrn1-Rep2 SRR502868
+        visibility full
+        subGroups strain=MUT replicate=R2
+        bigDataUrl rna/decay-intermediates/SRR502868.bw
+        color 77,146,33
+        type bigWig
+        visibility hide
+
+        track dcp2xrn1-Rep3
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep3
+        longLabel dcp2xrn1-Rep3 SRR502869
+        visibility full
+        subGroups strain=MUT replicate=R3
+        bigDataUrl rna/decay-intermediates/SRR502869.bw
+        color 77,146,33
+        type bigWig
+        visibility hide
 

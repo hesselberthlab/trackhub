@@ -2,7 +2,7 @@ track Replication
 superTrack on
 shortLabel Replication
 longLabel DNA replication data & annotations 
-type bigBed 6
+type bigBed 6 .
 visibility dense
 
     track Timing
@@ -10,12 +10,12 @@ visibility dense
     container multiWig
     aggregate transparentOverlay
     showSubtrackColorOnUi on
-    shortLabel Timing
+    shortLabel Trep 
     longLabel DNA replication timing 
     type bigWig 
     autoScale on
     maxHeightPixels 32:64:11
-    visibility full
+    visibility hide
 
         track Yabuki
         parent Timing
@@ -23,7 +23,6 @@ visibility dense
         longLabel Timing by copy number (Yabuki et al. 2002)
         bigDataUrl dna-replication/timing/yabuki.timing.bw
         color 118,42,131
-        visibility hide
         autoScale on
         type bigWig
 
@@ -33,20 +32,19 @@ visibility dense
         longLabel Timing by heavy/light (Raghu et al. 2001)
         bigDataUrl dna-replication/timing/raghu.timing.bw
         color 27,120,55
+        visibility full
         autoScale on
         type bigWig
 
     track OriDB
     parent Replication
-    type bigBed 6
+    type bigBed 6 .
     searchIndex name
     visibility pack
     bigDataUrl dna-replication/oridb.bb
     shortLabel OriDB
-    longLabel OriDB - origin annotations
     spectrum on
-    minGrayLevel 4
-    color 51,60,144
+    longLabel OriDB - origin annotations
 
     track ChIP
     parent Replication
@@ -68,7 +66,6 @@ visibility dense
         subGroups protein=MCM2 study=XU
         shortLabel Mcm2/Xu
         longLabel Mcm2 ChIP-chip (Xu et al. 2006)
-        viewLimits 0:15
         alwaysZero on
         color 244,109,67
 
@@ -79,7 +76,6 @@ visibility dense
         subGroups protein=ORC1 study=XU
         shortLabel Orc1/Xu
         longLabel Orc1 ChIP-chip (Xu et al. 2006)
-        viewLimits 0:15
         alwaysZero on
         color 102,189,99
 
@@ -89,8 +85,7 @@ visibility dense
         bigDataUrl dna-replication/chip/bell-orc1.bw
         subGroups protein=ORC1 study=BELL
         shortLabel Orc1/Bell
-        longLabel Orc1 ChIP-seq in G2 (XXX et al. XXX)
-        viewLimits 0:150
+        longLabel Orc1 ChIP-seq in G2 (Eaton et al. (2010))
         alwaysZero on
         color 26,152,80
 
@@ -106,6 +101,7 @@ visibility dense
     type bigWig
     visibility dense
     graphTypeDefault bar
+    windowingFunction mean
     smoothingWindow 12
     autoScale on
     maxHeightPixels 32:64:11
