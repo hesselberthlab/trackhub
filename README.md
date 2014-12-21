@@ -11,7 +11,7 @@ Currently the following track are available:
 ## sacCer1
 
 ### RNA
- + mRNA models (thanks to S. Peach)
+ + mRNA models (thanks to @speach)
  + mRNA-seq (Levin et al. (2010))
 
 ### Replication

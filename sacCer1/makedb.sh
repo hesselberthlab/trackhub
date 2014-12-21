@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
 rm -f trackDb.txt 
-cat */trackDb.txt >> trackDb.txt
+
+dbfiles=$(find . -maxdepth 2 -name 'trackDb.txt')
+cat $dbfiles >> trackDb.txt
 
