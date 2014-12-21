@@ -1,0 +1,184 @@
+track Replication
+superTrack on
+shortLabel Replication
+longLabel DNA replication data & annotations 
+type bigBed 6
+visibility dense
+
+    track Timing
+    parent Replication
+    container multiWig
+    aggregate transparentOverlay
+    showSubtrackColorOnUi on
+    shortLabel Timing
+    longLabel DNA replication timing 
+    type bigWig 
+    autoScale on
+    maxHeightPixels 32:64:11
+    visibility full
+
+        track Yabuki
+        parent Timing
+        shortLabel Yabuki
+        longLabel Timing by copy number (Yabuki et al. 2002)
+        bigDataUrl dna-replication/timing/yabuki.timing.bw
+        color 118,42,131
+        visibility hide
+        autoScale on
+        type bigWig
+
+        track Raghu
+        parent Timing 
+        shortLabel Raghu 
+        longLabel Timing by heavy/light (Raghu et al. 2001)
+        bigDataUrl dna-replication/timing/raghu.timing.bw
+        color 27,120,55
+        autoScale on
+        type bigWig
+
+    track OriDB
+    parent Replication
+    type bigBed 6
+    searchIndex name
+    visibility pack
+    bigDataUrl dna-replication/oridb.bb
+    shortLabel OriDB
+    longLabel OriDB - origin annotations
+    spectrum on
+    minGrayLevel 4
+    color 51,60,144
+
+    track ChIP
+    parent Replication
+    compositeTrack on
+    shortLabel ChIP
+    longLabel Replication proteins studied by ChIP
+    subGroup1 protein Protein MCM2=MCM2 ORC1=ORC1
+    subGroup1 study Study XU=Xu BELL=Bell 
+    dimensions dimX=protein dimY=study
+    type bigWig
+    autoScale on
+    visibility dense
+    maxHeightPixels 32:64:11
+
+        track Mcm2-Xu
+        parent ChIP
+        type bigWig
+        bigDataUrl dna-replication/chip/xu-mcm2.bw
+        subGroups protein=MCM2 study=XU
+        shortLabel Mcm2/Xu
+        longLabel Mcm2 ChIP-chip (Xu et al. 2006)
+        viewLimits 0:15
+        alwaysZero on
+        color 244,109,67
+
+        track Orc1-Xu
+        parent ChIP
+        type bigWig
+        bigDataUrl dna-replication/chip/xu-orc1.bw
+        subGroups protein=ORC1 study=XU
+        shortLabel Orc1/Xu
+        longLabel Orc1 ChIP-chip (Xu et al. 2006)
+        viewLimits 0:15
+        alwaysZero on
+        color 102,189,99
+
+        track Orc1-Bell
+        parent ChIP
+        type bigWig
+        bigDataUrl dna-replication/chip/bell-orc1.bw
+        subGroups protein=ORC1 study=BELL
+        shortLabel Orc1/Bell
+        longLabel Orc1 ChIP-seq in G2 (XXX et al. XXX)
+        viewLimits 0:150
+        alwaysZero on
+        color 26,152,80
+
+    track ssDNA
+    parent Replication
+    compositeTrack on
+    shortLabel ssDNA
+    longLabel ssDNA mapping with HU (Feng et al. 2006)
+    subGroup1 strain Strain WT=WT RAD53=RAD53
+    subGroup2 time Time T0=30 T1=60 T2=120 T3=180
+    dimensions dimX=strain dimY=time
+    sortOrder strain=- time=+
+    type bigWig
+    visibility dense
+    graphTypeDefault bar
+    smoothingWindow 12
+    autoScale on
+    maxHeightPixels 32:64:11
+
+        track WT-30min
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/wt-30min.bw
+        shortLabel WT-30min
+        longLabel WT-30min
+        subGroups strain=WT time=T0
+        color 166,189,219
+
+        track WT-1hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/wt-1hour.bw
+        shortLabel WT-60min
+        longLabel WT-60min
+        subGroups strain=WT time=T1
+        color 116,169,207
+
+        track WT-2hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/wt-2hour.bw
+        shortLabel WT-120min
+        longLabel WT-120min
+        subGroups strain=WT time=T2
+        color 43,140,190
+
+        track WT-3hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/wt-3hour.bw
+        shortLabel WT-180min
+        longLabel WT-180min
+        subGroups strain=WT time=T3
+        color 4,90,141
+
+        track RAD53-30min
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/rad53-30min.bw
+        shortLabel RAD53-30min
+        longLabel RAD53-30min
+        subGroups strain=RAD53 time=T0
+        color 253,187,132
+
+        track RAD53-1hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/rad53-1hour.bw
+        shortLabel RAD53-60min
+        longLabel RAD53-60min
+        subGroups strain=RAD53 time=T1
+        color 252,141,89
+
+        track RAD53-2hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/rad53-2hour.bw
+        shortLabel RAD53-120min
+        longLabel RAD53-120min
+        subGroups strain=RAD53 time=T2
+        color 227,74,51
+
+        track RAD53-3hour
+        parent ssDNA
+        type bigWig
+        bigDataUrl dna-replication/ssdna/rad53-3hour.bw
+        shortLabel RAD53-180min
+        longLabel RAD53-180min
+        subGroups strain=RAD53 time=T3
+        color 179,0,0
+

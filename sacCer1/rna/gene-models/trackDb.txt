@@ -1,0 +1,9 @@
+track mRNAs
+shortLabel mRNAs
+longLabel mRNA models
+type bigBed 12 +
+visibility pack
+bigDataUrl gene-models/mRNAs.bb
+colorByStrand 202,0,32 5,113,176
+searchIndex name
+

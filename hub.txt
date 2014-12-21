@@ -1,0 +1,5 @@
+hub Hesselberth-Public
+shortLabel Hesselberth-Public
+longLabel Hesselberth lab - public track hub 
+genomesFile genomes.txt 
+email jay.hesselberth@gmail.com

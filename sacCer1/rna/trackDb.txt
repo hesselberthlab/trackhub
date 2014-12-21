@@ -1,0 +1,45 @@
+track mRNA
+superTrack on show
+shortLabel mRNA 
+longLabel mRNA gene models and analysis
+
+    track mRNA-models
+    parent mRNA
+    shortLabel mRNAs
+    longLabel mRNA models
+    type bigBed 12 +
+    visibility pack
+    bigDataUrl rna/gene-models/mRNAs.bb
+    colorByStrand 202,0,32 5,113,176
+    searchIndex name
+
+    track mRNA-seq
+    parent mRNA
+    container multiWig
+    aggregate transparentOverlay
+    showSubtrackColorOnUi on
+    shortLabel RNA-seq
+    longLabel strand-specific RNA-seq (Levin et al. (2010) Nat Methods)
+    type bigWig 0 1e-6
+    viewLimits 0:1e-6
+    maxHeightPixels 32:64:11
+    visibility full
+
+        track pos
+        parent mRNA-seq
+        shortLabel pos strand
+        visibility full
+        bigDataUrl rna/rna-seq/regev.pos.bw
+        color 202,0,32
+        type bigWig
+        viewLimits 0:1e-6
+
+        track neg
+        parent mRNA-seq
+        shortLabel neg strand
+        visibility full
+        bigDataUrl rna/rna-seq/regev.neg.rescale.bw
+        color 5,113,176
+        type bigWig
+        viewLimits 0:1e-6
+
