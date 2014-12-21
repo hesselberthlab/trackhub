@@ -525,6 +525,7 @@ longLabel mRNA gene models and analysis
             maxHeightPixels 30:30:10
             color 5,113,176
             type bigWig
+
     track Decay-intermediates 
     compositeTrack on
     parent mRNA

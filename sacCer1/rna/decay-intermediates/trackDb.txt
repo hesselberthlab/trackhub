@@ -1,0 +1,67 @@
+    track Decay-intermediates 
+    compositeTrack on
+    parent mRNA
+    shortLabel mRNA-5P 
+    longLabel RNA 5'-P decay intermeidates in budding yeast (Harigaya & Parker (2012) PNAS)
+    subGroup1 strain Strain WT=WT MUT=dcp2/xrn1
+    subGroup2 replicate Replicate R1=Rep1 R2=Rep2 R3=Rep3
+    dimensions dimX=strain dimY=replicate
+    sortOrder strain=- replicate=+
+    maxHeightPixels 32:64:11
+    autoScale on
+    type bigWig
+    visibility dense
+
+        track WT-Rep1
+        parent Decay-intermediates
+        shortLabel WT-Rep1 
+        longLabel WT-Rep1 SRR502864
+        visibility full
+        subGroups strain=WT replicate=R1
+        bigDataUrl rna/decay-intermediates/SRR502864.bw
+        color 197,27,125
+        type bigWig
+
+        track WT-Rep2
+        parent Decay-intermediates
+        shortLabel WT-Rep2
+        longLabel WR-Rep2 SRR502865
+        visibility full
+        subGroups strain=WT replicate=R2
+        bigDataUrl rna/decay-intermediates/SRR502865.bw
+        color 197,27,125
+        type bigWig
+        visibility hide
+
+        track dcp2xrn1-Rep1
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep1
+        longLabel dcp2xrn1-Rep1 SRR502866
+        visibility full
+        subGroups strain=MUT replicate=R1
+        bigDataUrl rna/decay-intermediates/SRR502866.bw
+        color 77,146,33
+        type bigWig
+
+        track dcp2xrn1-Rep2
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep2
+        longLabel dcp2xrn1-Rep2 SRR502868
+        visibility full
+        subGroups strain=MUT replicate=R2
+        bigDataUrl rna/decay-intermediates/SRR502868.bw
+        color 77,146,33
+        type bigWig
+        visibility hide
+
+        track dcp2xrn1-Rep3
+        parent Decay-intermediates
+        shortLabel dcp2xrn1-Rep3
+        longLabel dcp2xrn1-Rep3 SRR502869
+        visibility full
+        subGroups strain=MUT replicate=R3
+        bigDataUrl rna/decay-intermediates/SRR502869.bw
+        color 77,146,33
+        type bigWig
+        visibility hide
+
