@@ -1,0 +1,19 @@
+File Names:
+
+Afu_BG234_predig	BG234 dut ung pre-digestion with A. fulgidus UDG
+Afu_Y7092_predig	Y7092 dut ung pre-digestion with A. fulgidus UDG
+du_dcd1			run1 dut ung dcd1 post-digestion
+du_post			dut ung post-digestion 
+du_predig		dut ung pre-digestion
+du_sml1			run1 w303 dut ung sml1 post-digestion
+msh2_AAG		dut ung msh2 pre-digestion
+rev1_TCA		dut ung rev1 pre-digestion
+s288c_dcd1		run3 dut ung dcd1 post-digestion
+s288c_sml1		run3 s288c dut ung sml1 post-digestion
+ssy161_du_c5		w303 dut ung sml1 post-digestion (candidate 5)
+ung1_5fu_postdig	ung1 + 5-fu post-digestion
+ung1_postdig		ung1 post-digestion
+w303_sml1		run1 w303 dut ung sml1 post-digestion
+wt_post			wt post-digestion 
+
+RPM: reads per million normalization   

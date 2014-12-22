@@ -1,0 +1,154 @@
+track Lab-data 
+superTrack on show
+shortLabel Lab-data
+longLabel Data from Hesselberth lab publications 
+
+    track Ex-seq
+    parent Lab-data
+    compositeTrack on
+    shortLabel Ex-seq
+    longLabel Excision-seq data
+    type bigWig 
+    autoScale on
+    windowingFunction mean
+    visibility full
+    subGroup1 genotype Genotype WT=WT DU=dut1-ung1 DUD=dut1-ung1-dcd1 DUS=dut1-ung1-sml1 U=ung1
+    subGroup2 replicate Replicate R1=Rep1 R2=Rep2 R3=Rep3
+    subGroup3 background Background U=Unknown S=S288c W=W303
+    subGroup4 method Method B=Pre-digestion A=Post-digestion
+    subGroup5 treatment Treatment NA=None FU=5-fluorouracil
+    dimensions dimX=genotype dimY=method dimA=replicate dimB=background dimC=treatment
+    filterComposite dimA dimB dimC
+    sortOrder method=+ genotype=- background=+ treatment=+ replicate=+
+
+        track Afu_BG234_predig
+        parent Ex-seq
+        shortLabel dut-ung/pre
+        bigDataUrl lab-data/ex-seq/Afu_BG234_predig.bw
+        longLabel BG234 dut ung pre-digestion with A. fulgidus UDG
+        subGroups genotype=DU replicate=R1 background=U method=B treatment=NA
+        maxHeightPixels 30:30:10
+        color 0,68,27
+        type bigWig
+
+        track Afu_Y7092_predig
+        parent Ex-seq
+        shortLabel dut-ung/pre
+        bigDataUrl lab-data/ex-seq/Afu_Y7092_predig.bw
+        longLabel Y7092 dut ung pre-digestion with A. fulgidus UDG
+        subGroups genotype=DU replicate=R1 background=S method=B treatment=NA
+        maxHeightPixels 30:30:10
+        color 0,68,27
+        type bigWig
+
+        track du_dcd1
+        parent Ex-seq
+        shortLabel dut-ung-dcd/post
+        bigDataUrl lab-data/ex-seq/du_dcd1.bw
+        longLabel run1 dut ung dcd1 post-digestion 
+        subGroups genotype=DUD replicate=R1 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track du_post
+        parent Ex-seq
+        shortLabel dut-ung/post
+        bigDataUrl lab-data/ex-seq/du_post.bw
+        longLabel dut ung post-digestion
+        subGroups genotype=DU replicate=R1 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track du_predig
+        parent Ex-seq
+        shortLabel dut-ung/pre
+        bigDataUrl lab-data/ex-seq/du_predig.bw
+        longLabel dut ung pre-digestion
+        subGroups genotype=DU replicate=R1 background=S method=B treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track du_sml1
+        parent Ex-seq
+        shortLabel dut-ung-sml/pre
+        bigDataUrl lab-data/ex-seq/du_sml1.bw
+        longLabel dut ung sml1 post-digestion
+        subGroups genotype=DUS replicate=R1 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track s288c_dcd1
+        parent Ex-seq
+        shortLabel dut-ung-dcd/post
+        bigDataUrl lab-data/ex-seq/s288c_sml1.bw
+        longLabel dut ung dcd1 post-digestion - run3
+        subGroups genotype=DUD replicate=R2 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track s288c_sml1
+        parent Ex-seq
+        shortLabel dut-ung-sml/post
+        bigDataUrl lab-data/ex-seq/s288c_sml1.bw
+        longLabel dut ung sml1 post-digestion - run3
+        subGroups genotype=DUS replicate=R2 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track ssy161_du_c5
+        parent Ex-seq
+        shortLabel dut-ung-sml/post
+        bigDataUrl lab-data/ex-seq/ssy161_du_c5.bw
+        longLabel w303 dut ung sml1 post-digestion - run3
+        subGroups genotype=DUS replicate=R1 background=W method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track ung1_5fu_postdig
+        parent Ex-seq
+        shortLabel ung-5FU/post
+        bigDataUrl lab-data/ex-seq/ung1_5fu_postdig.bw
+        longLabel ung1_5fu_postdig 
+        subGroups genotype=U replicate=R1 background=S method=A treatment=FU
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track ung1_postdig
+        parent Ex-seq
+        shortLabel ung/post
+        bigDataUrl lab-data/ex-seq/ung1_postdig.bw
+        longLabel ung1_postdig 
+        subGroups genotype=U replicate=R1 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track w303_sml1
+        parent Ex-seq
+        shortLabel dut-ung-sml/post
+        bigDataUrl lab-data/ex-seq/w303_sml1.bw
+        longLabel run1 w303 dut ung sml1 post-digestion
+        subGroups genotype=DUS replicate=R1 background=W method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+        track wt_post
+        parent Ex-seq
+        shortLabel wt/post
+        bigDataUrl lab-data/ex-seq/wt_post.bw
+        longLabel wt post-digestion 
+        subGroups genotype=WT replicate=R1 background=S method=A treatment=NA
+        maxHeightPixels 30:30:10
+        color 64,0,75
+        type bigWig
+
+
