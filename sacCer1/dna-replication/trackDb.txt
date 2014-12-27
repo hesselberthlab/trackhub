@@ -4,6 +4,7 @@ shortLabel Replication
 longLabel DNA replication data & annotations 
 type bigBed 6 .
 visibility dense
+html description.html
 
     track Timing
     parent Replication

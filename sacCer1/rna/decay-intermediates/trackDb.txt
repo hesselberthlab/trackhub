@@ -2,8 +2,8 @@
     compositeTrack on
     parent mRNA
     shortLabel mRNA-5P 
-    longLabel RNA 5'-P decay intermeidates in budding yeast (Harigaya & Parker (2012) PNAS)
-    subGroup1 strain Strain WT=WT MUT=dcp2/xrn1
+    longLabel RNA 5prime-P decay intermeidates in budding yeast (Harigaya & Parker (2012) PNAS)
+    subGroup1 strain Strain WT=WT MUT=dcp2+xrn1
     subGroup2 replicate Replicate R1=Rep1 R2=Rep2 R3=Rep3
     dimensions dimX=strain dimY=replicate
     sortOrder strain=- replicate=+
