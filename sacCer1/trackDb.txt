@@ -190,6 +190,7 @@ longLabel mRNA gene models and analysis
     longLabel mRNA models
     type bigBed 12 +
     visibility pack
+    labelOnFeature on
     bigDataUrl rna/gene-models/mRNAs.bb
     colorByStrand 202,0,32 5,113,176
     searchIndex name
