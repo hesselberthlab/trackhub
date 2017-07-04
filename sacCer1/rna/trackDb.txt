@@ -21,7 +21,8 @@ longLabel mRNA gene models and analysis
     subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
     subGroup3 treatment Treatment NT=None TM=tunicamycin 
     subGroup4 strand Strand pos=pos neg=neg
-    sortOrder view=- strand=+
+    dimensions dimX=strain dimY=treatment
+    sortOrder strand=+
     type bigWig
 
         track WT_NT.pos
@@ -29,6 +30,7 @@ longLabel mRNA gene models and analysis
         parent RNA-repair-mutants
         shortLabel WT_NT pos 
         visibility full
+        color 27,158,119
         bigDataUrl rna/rna-repair/WT_NT.pos.bw
         maxHeightPixels 30:30:10
         type bigWig
@@ -38,6 +40,7 @@ longLabel mRNA gene models and analysis
         parent RNA-repair-mutants
         shortLabel WT_NT neg
         visibility full
+        color 217,95,2
         bigDataUrl rna/rna-repair/WT_NT.neg.bw
         maxHeightPixels 30:30:10
         type bigWig
@@ -47,6 +50,7 @@ longLabel mRNA gene models and analysis
         parent RNA-repair-mutants
         shortLabel WT_TM pos 
         visibility full
+        color 27,158,119
         bigDataUrl rna/rna-repair/WT_TM.pos.bw
         maxHeightPixels 30:30:10
         type bigWig
@@ -56,9 +60,173 @@ longLabel mRNA gene models and analysis
         parent RNA-repair-mutants
         shortLabel WT_TM neg
         visibility full
+        color 217,95,2
         bigDataUrl rna/rna-repair/WT_TM.neg.bw
         maxHeightPixels 30:30:10
         type bigWig
+
+        track xrn1_NT.pos
+        subGroups strain=xrn1 strand=pos treatment=NT
+        parent RNA-repair-mutants
+        shortLabel xrn1_NT pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/xrn1_NT.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track xrn1_NT.neg
+        subGroups strain=xrn1 strand=neg treatment=NT
+        parent RNA-repair-mutants
+        shortLabel xrn1_NT neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/xrn1_NT.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track xrn1_TM.pos
+        subGroups strain=xrn1 strand=pos treatment=TM
+        parent RNA-repair-mutants
+        shortLabel xrn1_TM pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/xrn1_TM.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track xrn1_TM.neg
+        subGroups strain=xrn1 strand=neg treatment=TM
+        parent RNA-repair-mutants
+        shortLabel xrn1_TM neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/xrn1_TM.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track trl1_NT.pos
+        subGroups strain=trl1 strand=pos treatment=NT
+        parent RNA-repair-mutants
+        shortLabel trl1_NT pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/trl1_NT.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track trl1_NT.neg
+        subGroups strain=trl1 strand=neg treatment=NT
+        parent RNA-repair-mutants
+        shortLabel trl1_NT neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/trl1_NT.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track trl1_TM.pos
+        subGroups strain=trl1 strand=pos treatment=TM
+        parent RNA-repair-mutants
+        shortLabel trl1_TM pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/trl1_TM.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track trl1_TM.neg
+        subGroups strain=trl1 strand=neg treatment=TM
+        parent RNA-repair-mutants
+        shortLabel trl1_TM neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/trl1_TM.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_NT.pos
+        subGroups strain=tpt1 strand=pos treatment=NT
+        parent RNA-repair-mutants
+        shortLabel tpt1_NT pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/tpt1_NT.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_NT.neg
+        subGroups strain=tpt1 strand=neg treatment=NT
+        parent RNA-repair-mutants
+        shortLabel tpt1_NT neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/tpt1_NT.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_TM.pos
+        subGroups strain=tpt1 strand=pos treatment=TM
+        parent RNA-repair-mutants
+        shortLabel tpt1_TM pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/tpt1_TM.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_TM.neg
+        subGroups strain=tpt1 strand=neg treatment=TM
+        parent RNA-repair-mutants
+        shortLabel tpt1_TM neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/tpt1_TM.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_ski2_NT.pos
+        subGroups strain=tpt1_ski2 strand=pos treatment=NT
+        parent RNA-repair-mutants
+        shortLabel tpt1_ski2_NT pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/tpt1_ski2_NT.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_ski2_NT.neg
+        subGroups strain=tpt1_ski2 strand=neg treatment=NT
+        parent RNA-repair-mutants
+        shortLabel tpt1_ski2_NT neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/tpt1_ski2_NT.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_ski2_TM.pos
+        subGroups strain=tpt1_ski2 strand=pos treatment=TM
+        parent RNA-repair-mutants
+        shortLabel tpt1_ski2_TM pos 
+        visibility full
+        color 27,158,119
+        bigDataUrl rna/rna-repair/tpt1_ski2_TM.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track tpt1_ski2_TM.neg
+        subGroups strain=tpt1_ski2 strand=neg treatment=TM
+        parent RNA-repair-mutants
+        shortLabel tpt1_ski2_TM neg
+        visibility full
+        color 217,95,2
+        bigDataUrl rna/rna-repair/tpt1_ski2_TM.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+
+
 
     track mRNA-seq
     parent mRNA
