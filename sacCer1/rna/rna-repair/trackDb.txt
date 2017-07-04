@@ -2,7 +2,7 @@ track RNA-repair
 compositeTrack on
 shortLabel RNArepair
 longLabel RNA-seq of RNA repair mutants Coverage tracks
-subGroup1 view Views COV=Coverage END=Ends
+subGroup1 view Views COV=Repair-Coverage END=Repair-Ends
 subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
 subGroup3 treatment Treatment NT=None TM=tunicamycin
 subGroup4 strand Strand pos=pos neg=neg
@@ -11,7 +11,7 @@ filterComposite dimA
 sortOrder view=- strand=+
 type bigwig
 
-	track Coverage
+	track Repair-Coverage
  	view COV
  	parent RNA-repair
  	shortLabel Coverage
@@ -20,7 +20,7 @@ type bigwig
  	autoScale on
 
 		track WT.NT.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=WT strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/WT_NT.pos.bw
  		shortLabel WT.NT
@@ -30,7 +30,7 @@ type bigwig
  		type bigWig
 
 		track WT.NT.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=WT strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/WT_NT.neg.bw
  		shortLabel WT.NT
@@ -40,7 +40,7 @@ type bigwig
  		type bigWig
 
 		track WT.TM.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=WT strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/WT_TM.pos.bw
  		shortLabel WT.TM
@@ -50,7 +50,7 @@ type bigwig
  		type bigWig
 
 		track WT.TM.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=WT strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/WT_TM.neg.bw
  		shortLabel WT.TM
@@ -60,7 +60,7 @@ type bigwig
  		type bigWig
 
 		track trl1.NT.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=trl1 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/trl1_NT.pos.bw
  		shortLabel trl1.NT
@@ -70,7 +70,7 @@ type bigwig
  		type bigWig
 
 		track trl1.NT.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=trl1 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/trl1_NT.neg.bw
  		shortLabel trl1.NT
@@ -80,7 +80,7 @@ type bigwig
  		type bigWig
 
 		track trl1.TM.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=trl1 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/trl1_TM.pos.bw
  		shortLabel trl1.TM
@@ -90,7 +90,7 @@ type bigwig
  		type bigWig
 
 		track trl1.TM.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=trl1 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/trl1_TM.neg.bw
  		shortLabel trl1.TM
@@ -100,7 +100,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.NT.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_NT.pos.bw
  		shortLabel tpt1.NT
@@ -110,7 +110,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.NT.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_NT.neg.bw
  		shortLabel tpt1.NT
@@ -120,7 +120,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.TM.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_TM.pos.bw
  		shortLabel tpt1.TM
@@ -130,7 +130,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.TM.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_TM.neg.bw
  		shortLabel tpt1.TM
@@ -140,7 +140,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.NT.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1_ski2 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_ski2_NT.pos.bw
  		shortLabel tpt1_ski2.NT
@@ -150,7 +150,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.NT.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1_ski2 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_ski2_NT.neg.bw
  		shortLabel tpt1_ski2.NT
@@ -160,7 +160,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.TM.pos.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1_ski2 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_ski2_TM.pos.bw
  		shortLabel tpt1_ski2.TM
@@ -170,7 +170,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.TM.neg.coverage
- 		parent Coverage
+ 		parent Repair-Coverage
  		subGroups view=COV strain=tpt1_ski2 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_ski2_TM.neg.bw
  		shortLabel tpt1_ski2.TM
@@ -179,7 +179,7 @@ type bigwig
  		color 55,126,184
  		type bigWig
 
-	track Ends
+	track Repair-Ends
  	view END
  	parent RNA-repair
  	shortLabel Ends
@@ -188,7 +188,7 @@ type bigwig
  	autoScale on
 
 		track WT.NT.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=WT strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/WT_NT.ends.pos.bw
  		shortLabel WT.NT.ends
@@ -198,7 +198,7 @@ type bigwig
  		type bigWig
 
 		track WT.NT.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=WT strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/WT_NT.ends.neg.bw
  		shortLabel WT.NT.ends
@@ -208,7 +208,7 @@ type bigwig
  		type bigWig
 
 		track WT.TM.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=WT strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/WT_TM.ends.pos.bw
  		shortLabel WT.TM.ends
@@ -218,7 +218,7 @@ type bigwig
  		type bigWig
 
 		track WT.TM.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=WT strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/WT_TM.ends.neg.bw
  		shortLabel WT.TM.ends
@@ -228,7 +228,7 @@ type bigwig
  		type bigWig
 
 		track trl1.NT.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=trl1 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/trl1_NT.ends.pos.bw
  		shortLabel trl1.NT.ends
@@ -238,7 +238,7 @@ type bigwig
  		type bigWig
 
 		track trl1.NT.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=trl1 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/trl1_NT.ends.neg.bw
  		shortLabel trl1.NT.ends
@@ -248,7 +248,7 @@ type bigwig
  		type bigWig
 
 		track trl1.TM.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=trl1 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/trl1_TM.ends.pos.bw
  		shortLabel trl1.TM.ends
@@ -258,7 +258,7 @@ type bigwig
  		type bigWig
 
 		track trl1.TM.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=trl1 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/trl1_TM.ends.neg.bw
  		shortLabel trl1.TM.ends
@@ -268,7 +268,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.NT.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_NT.ends.pos.bw
  		shortLabel tpt1.NT.ends
@@ -278,7 +278,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.NT.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_NT.ends.neg.bw
  		shortLabel tpt1.NT.ends
@@ -288,7 +288,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.TM.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_TM.ends.pos.bw
  		shortLabel tpt1.TM.ends
@@ -298,7 +298,7 @@ type bigwig
  		type bigWig
 
 		track tpt1.TM.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_TM.ends.neg.bw
  		shortLabel tpt1.TM.ends
@@ -308,7 +308,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.NT.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1_ski2 strand=pos treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_ski2_NT.ends.pos.bw
  		shortLabel tpt1_ski2.NT.ends
@@ -318,7 +318,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.NT.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1_ski2 strand=neg treatment=NT
  		bigDataUrl rna/rna-repair/tpt1_ski2_NT.ends.neg.bw
  		shortLabel tpt1_ski2.NT.ends
@@ -328,7 +328,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.TM.pos.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1_ski2 strand=pos treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_ski2_TM.ends.pos.bw
  		shortLabel tpt1_ski2.TM.ends
@@ -338,7 +338,7 @@ type bigwig
  		type bigWig
 
 		track tpt1_ski2.TM.neg.ends
- 		parent Ends
+ 		parent Repair-Ends
  		subGroups view=END strain=tpt1_ski2 strand=neg treatment=TM
  		bigDataUrl rna/rna-repair/tpt1_ski2_TM.ends.neg.bw
  		shortLabel tpt1_ski2.TM.ends

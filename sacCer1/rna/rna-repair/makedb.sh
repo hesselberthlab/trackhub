@@ -12,7 +12,7 @@ mainstanza="track RNA-repair\n
 compositeTrack on\n
 shortLabel RNArepair\n
 longLabel RNA-seq of RNA repair mutants Coverage tracks\n
-subGroup1 view Views COV=Coverage END=Ends\n
+subGroup1 view Views COV=Repair-Coverage END=Repair-Ends\n
 subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2\n
 subGroup3 treatment Treatment NT=None TM=tunicamycin\n
 subGroup4 strand Strand pos=pos neg=neg\n
@@ -24,7 +24,7 @@ type bigwig\n"
 echo -e $mainstanza
 
 cov_stanza="
-\ttrack Coverage\n
+\ttrack Repair-Coverage\n
 \tview COV\n
 \tparent RNA-repair\n
 \tshortLabel Coverage\n
@@ -46,7 +46,7 @@ for strain in ${strains[@]}; do
 
             stanza="
                     \t\ttrack $strain.$treatment.$strand.coverage\n
-                    \t\tparent Coverage\n
+                    \t\tparent Repair-Coverage\n
                     \t\tsubGroups view=COV strain=$strain strand=$strand treatment=$treatment\n
                     \t\tbigDataUrl rna/rna-repair/$strain""_$treatment.$strand.bw\n
                     \t\tshortLabel $strain.$treatment\n
@@ -61,7 +61,7 @@ for strain in ${strains[@]}; do
 done
 
 end_stanza="
-\ttrack Ends\n
+\ttrack Repair-Ends\n
 \tview END\n
 \tparent RNA-repair\n
 \tshortLabel Ends\n
@@ -83,7 +83,7 @@ for strain in ${strains[@]}; do
 
             stanza="
                     \t\ttrack $strain.$treatment.$strand.ends\n
-                    \t\tparent Ends\n
+                    \t\tparent Repair-Ends\n
                     \t\tsubGroups view=END strain=$strain strand=$strand treatment=$treatment\n
                     \t\tbigDataUrl rna/rna-repair/$strain""_$treatment.ends.$strand.bw\n
                     \t\tshortLabel $strain.$treatment.ends\n
