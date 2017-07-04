@@ -203,6 +203,7 @@ longLabel mRNA gene models and analysis
     subGroup3 treatment Treatment NT=None TM=tunicamycin 
     subGroup4 strand Strand pos=pos neg=neg
     sortOrder view=- strand=+
+    type bigWig
 
         track WT_NT.pos
         subGroups strain=WT strand=pos treatment=NT
