@@ -13,6 +13,54 @@ longLabel mRNA gene models and analysis
     colorByStrand 202,0,32 5,113,176
     searchIndex name
 
+    track RNA repair mutants 
+    parent mRNA
+    compositeTrack on
+    shortLabel RNA repair RNA-seq 
+    longLabel RNA-seq of RNA repair mutants
+    subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
+    subGroup3 treatment Treatment NT=None TM=tunicamycin 
+    subGroup4 strand Strand pos=pos neg=neg
+    dimensions dimX=treatment dimY=strain 
+    filterComposite dimX dimY
+    sortOrder view=- strand=+
+
+        track WT_NT.pos
+        subGroups strain=WT strand=pos treatment=NT
+        parent RNA repair mutants
+        shortLabel WT_NT pos 
+        visibility full
+        bigDataUrl rna/rna-repair/WT_NT.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track WT_NT.neg
+        subGroups strain=WT strand=neg treatment=NT
+        parent RNA repair mutants
+        shortLabel WT_NT neg
+        visibility full
+        bigDataUrl rna/rna-repair/WT_NT.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track WT_TM.pos
+        subGroups strain=WT strand=pos treatment=TM
+        parent RNA repair mutants
+        shortLabel WT_TM pos 
+        visibility full
+        bigDataUrl rna/rna-repair/WT_TM.pos.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
+        track WT_TM.neg
+        subGroups strain=WT strand=neg treatment=TM
+        parent RNA repair mutants
+        shortLabel WT_TM neg
+        visibility full
+        bigDataUrl rna/rna-repair/WT_TM.neg.bw
+        maxHeightPixels 30:30:10
+        type bigWig
+
     track mRNA-seq
     parent mRNA
     container multiWig
