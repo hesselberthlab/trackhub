@@ -202,8 +202,6 @@ longLabel mRNA gene models and analysis
     subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
     subGroup3 treatment Treatment NT=None TM=tunicamycin 
     subGroup4 strand Strand pos=pos neg=neg
-    dimensions dimX=treatment dimY=strain 
-    filterComposite dimX dimY
     sortOrder view=- strand=+
 
         track WT_NT.pos
