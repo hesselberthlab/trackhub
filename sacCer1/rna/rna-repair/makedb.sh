@@ -4,33 +4,35 @@
 poscolor="228,26,28" # red
 negcolor="55,126,184" # blue
 
-strains=(WT trl1 tpt1 tpt1_ski2)
+strains=(WT xrn1 trl1 tpt1 tpt1_ski2)
 treatments=(NT TM)
 strands=(pos neg)
 
-mainstanza="track RNA-repair\n
-compositeTrack on\n
-shortLabel RNArepair\n
-longLabel RNA-seq of RNA repair mutants Coverage tracks\n
-subGroup1 view Views COV=Repair-Coverage END=Repair-Ends\n
-subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2\n
-subGroup3 treatment Treatment NT=None TM=tunicamycin\n
-subGroup4 strand Strand pos=pos neg=neg\n
-dimensions dimX=treatment dimY=strain dimA=strand\n
-filterComposite dimA\n
-sortOrder view=- strand=+\n
-type bigwig\n"
+mainstanza="
+\ttrack RNA-repair\n
+\tparent mRNA\n
+\tcompositeTrack on\n
+\tshortLabel RNArepair\n
+\tlongLabel RNA-seq of RNA repair mutants Coverage tracks\n
+\tsubGroup1 view Views COV=Repair-Coverage END=Repair-Ends\n
+\tsubGroup2 strain Strain WT=wild-type xrn1=xrn1 trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2\n
+\tsubGroup3 treatment Treatment NT=None TM=tunicamycin\n
+\tsubGroup4 strand Strand pos=pos neg=neg\n
+\tdimensions dimX=treatment dimY=strain dimA=strand\n
+\tfilterComposite dimA\n
+\tsortOrder view=- strand=+\n
+\ttype bigwig\n"
 
 echo -e $mainstanza
 
 cov_stanza="
-\ttrack Repair-Coverage\n
-\tview COV\n
-\tparent RNA-repair\n
-\tshortLabel Coverage\n
-\tvisibility full\n
-\ttype bigWig\n
-\tautoScale on\n"
+\t\ttrack Repair-Coverage\n
+\t\tview COV\n
+\t\tparent RNA-repair\n
+\t\tshortLabel Coverage\n
+\t\tvisibility full\n
+\t\ttype bigWig\n
+\t\tautoScale on\n"
 
 echo -e $cov_stanza
 
@@ -61,13 +63,13 @@ for strain in ${strains[@]}; do
 done
 
 end_stanza="
-\ttrack Repair-Ends\n
-\tview END\n
-\tparent RNA-repair\n
-\tshortLabel Ends\n
-\tvisibility full\n
-\ttype bigWig\n
-\tautoScale on\n"
+\t\ttrack Repair-Ends\n
+\t\tview END\n
+\t\tparent RNA-repair\n
+\t\tshortLabel Ends\n
+\t\tvisibility full\n
+\t\ttype bigWig\n
+\t\tautoScale on\n"
 
 echo -e $end_stanza
 

@@ -1,23 +1,24 @@
-track RNA-repair
-compositeTrack on
-shortLabel RNArepair
-longLabel RNA-seq of RNA repair mutants Coverage tracks
-subGroup1 view Views COV=Repair-Coverage END=Repair-Ends
-subGroup2 strain Strain WT=wild-type trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
-subGroup3 treatment Treatment NT=None TM=tunicamycin
-subGroup4 strand Strand pos=pos neg=neg
-dimensions dimX=treatment dimY=strain dimA=strand
-filterComposite dimA
-sortOrder view=- strand=+
-type bigwig
+	track RNA-repair
+ 	parent mRNA
+ 	compositeTrack on
+ 	shortLabel RNArepair
+ 	longLabel RNA-seq of RNA repair mutants Coverage tracks
+ 	subGroup1 view Views COV=Repair-Coverage END=Repair-Ends
+ 	subGroup2 strain Strain WT=wild-type xrn1=xrn1 trl1=trl1 tpt1=tpt1 tpt1_ski2=tpt1_ski2
+ 	subGroup3 treatment Treatment NT=None TM=tunicamycin
+ 	subGroup4 strand Strand pos=pos neg=neg
+ 	dimensions dimX=treatment dimY=strain dimA=strand
+ 	filterComposite dimA
+ 	sortOrder view=- strand=+
+ 	type bigwig
 
-	track Repair-Coverage
- 	view COV
- 	parent RNA-repair
- 	shortLabel Coverage
- 	visibility full
- 	type bigWig
- 	autoScale on
+		track Repair-Coverage
+ 		view COV
+ 		parent RNA-repair
+ 		shortLabel Coverage
+ 		visibility full
+ 		type bigWig
+ 		autoScale on
 
 		track WT.NT.pos.coverage
  		parent Repair-Coverage
@@ -55,6 +56,46 @@ type bigwig
  		bigDataUrl rna/rna-repair/WT_TM.neg.bw
  		shortLabel WT.TM
  		longLabel WT TM neg
+ 		maxHeightPixels 30:30:10
+ 		color 55,126,184
+ 		type bigWig
+
+		track xrn1.NT.pos.coverage
+ 		parent Repair-Coverage
+ 		subGroups view=COV strain=xrn1 strand=pos treatment=NT
+ 		bigDataUrl rna/rna-repair/xrn1_NT.pos.bw
+ 		shortLabel xrn1.NT
+ 		longLabel xrn1 NT pos
+ 		maxHeightPixels 30:30:10
+ 		color 228,26,28
+ 		type bigWig
+
+		track xrn1.NT.neg.coverage
+ 		parent Repair-Coverage
+ 		subGroups view=COV strain=xrn1 strand=neg treatment=NT
+ 		bigDataUrl rna/rna-repair/xrn1_NT.neg.bw
+ 		shortLabel xrn1.NT
+ 		longLabel xrn1 NT neg
+ 		maxHeightPixels 30:30:10
+ 		color 55,126,184
+ 		type bigWig
+
+		track xrn1.TM.pos.coverage
+ 		parent Repair-Coverage
+ 		subGroups view=COV strain=xrn1 strand=pos treatment=TM
+ 		bigDataUrl rna/rna-repair/xrn1_TM.pos.bw
+ 		shortLabel xrn1.TM
+ 		longLabel xrn1 TM pos
+ 		maxHeightPixels 30:30:10
+ 		color 228,26,28
+ 		type bigWig
+
+		track xrn1.TM.neg.coverage
+ 		parent Repair-Coverage
+ 		subGroups view=COV strain=xrn1 strand=neg treatment=TM
+ 		bigDataUrl rna/rna-repair/xrn1_TM.neg.bw
+ 		shortLabel xrn1.TM
+ 		longLabel xrn1 TM neg
  		maxHeightPixels 30:30:10
  		color 55,126,184
  		type bigWig
@@ -179,13 +220,13 @@ type bigwig
  		color 55,126,184
  		type bigWig
 
-	track Repair-Ends
- 	view END
- 	parent RNA-repair
- 	shortLabel Ends
- 	visibility full
- 	type bigWig
- 	autoScale on
+		track Repair-Ends
+ 		view END
+ 		parent RNA-repair
+ 		shortLabel Ends
+ 		visibility full
+ 		type bigWig
+ 		autoScale on
 
 		track WT.NT.pos.ends
  		parent Repair-Ends
@@ -223,6 +264,46 @@ type bigwig
  		bigDataUrl rna/rna-repair/WT_TM.ends.neg.bw
  		shortLabel WT.TM.ends
  		longLabel WT TM neg
+ 		maxHeightPixels 30:30:10
+ 		color 55,126,184
+ 		type bigWig
+
+		track xrn1.NT.pos.ends
+ 		parent Repair-Ends
+ 		subGroups view=END strain=xrn1 strand=pos treatment=NT
+ 		bigDataUrl rna/rna-repair/xrn1_NT.ends.pos.bw
+ 		shortLabel xrn1.NT.ends
+ 		longLabel xrn1 NT pos
+ 		maxHeightPixels 30:30:10
+ 		color 228,26,28
+ 		type bigWig
+
+		track xrn1.NT.neg.ends
+ 		parent Repair-Ends
+ 		subGroups view=END strain=xrn1 strand=neg treatment=NT
+ 		bigDataUrl rna/rna-repair/xrn1_NT.ends.neg.bw
+ 		shortLabel xrn1.NT.ends
+ 		longLabel xrn1 NT neg
+ 		maxHeightPixels 30:30:10
+ 		color 55,126,184
+ 		type bigWig
+
+		track xrn1.TM.pos.ends
+ 		parent Repair-Ends
+ 		subGroups view=END strain=xrn1 strand=pos treatment=TM
+ 		bigDataUrl rna/rna-repair/xrn1_TM.ends.pos.bw
+ 		shortLabel xrn1.TM.ends
+ 		longLabel xrn1 TM pos
+ 		maxHeightPixels 30:30:10
+ 		color 228,26,28
+ 		type bigWig
+
+		track xrn1.TM.neg.ends
+ 		parent Repair-Ends
+ 		subGroups view=END strain=xrn1 strand=neg treatment=TM
+ 		bigDataUrl rna/rna-repair/xrn1_TM.ends.neg.bw
+ 		shortLabel xrn1.TM.ends
+ 		longLabel xrn1 TM neg
  		maxHeightPixels 30:30:10
  		color 55,126,184
  		type bigWig
