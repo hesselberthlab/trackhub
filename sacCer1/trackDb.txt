@@ -801,7 +801,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=PreFrag replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -811,7 +811,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=PreFrag replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -821,7 +821,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -831,7 +831,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -841,7 +841,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -851,7 +851,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -861,7 +861,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -871,7 +871,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -881,7 +881,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -891,7 +891,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -901,7 +901,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -911,7 +911,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -921,7 +921,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -931,7 +931,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -941,7 +941,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -951,7 +951,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -961,7 +961,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -971,7 +971,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=pos treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -981,7 +981,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -991,7 +991,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1001,7 +1001,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1011,7 +1011,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1021,7 +1021,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1031,7 +1031,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1041,7 +1041,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1051,7 +1051,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1061,7 +1061,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1071,7 +1071,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1081,7 +1081,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1091,7 +1091,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1101,7 +1101,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1111,7 +1111,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.pos.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1121,7 +1121,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=pos replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1131,7 +1131,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.pos.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=pos treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.pos.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=pos replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1141,7 +1141,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=PreFrag replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1151,7 +1151,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=PreFrag replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1161,7 +1161,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1171,7 +1171,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1181,7 +1181,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1191,7 +1191,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1201,7 +1201,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1211,7 +1211,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1221,7 +1221,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1231,7 +1231,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1241,7 +1241,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1251,7 +1251,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1261,7 +1261,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1271,7 +1271,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1281,7 +1281,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1291,7 +1291,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1301,7 +1301,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1311,7 +1311,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=neg treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1321,7 +1321,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1331,7 +1331,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1341,7 +1341,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1351,7 +1351,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1361,7 +1361,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1371,7 +1371,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1381,7 +1381,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1391,7 +1391,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1401,7 +1401,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1411,7 +1411,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1421,7 +1421,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1431,7 +1431,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1441,7 +1441,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1451,7 +1451,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.neg.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1461,7 +1461,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=neg replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1471,7 +1471,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.neg.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=neg treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.neg.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=neg replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1481,7 +1481,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=PreFrag replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1491,7 +1491,7 @@ longLabel mRNA gene models and analysis
             track WT.PreFrag.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=PreFrag replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.PreFrag.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.PreFrag.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.PreFrag.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=PreFrag strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1501,7 +1501,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1511,7 +1511,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1521,7 +1521,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.Tm.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1531,7 +1531,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.Tm.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1541,7 +1541,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1551,7 +1551,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1561,7 +1561,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1571,7 +1571,7 @@ longLabel mRNA gene models and analysis
             track WT.Tm.SAP.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.Tm.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.Tm.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=Tm.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1581,7 +1581,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1591,7 +1591,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1601,7 +1601,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1611,7 +1611,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1621,7 +1621,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1631,7 +1631,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1641,7 +1641,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1651,7 +1651,7 @@ longLabel mRNA gene models and analysis
             track WT.DMSO.SAP.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=WT strand=all treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/WT.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/WT.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel WT.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=WT treatment=DMSO.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1661,7 +1661,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1671,7 +1671,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1681,7 +1681,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1691,7 +1691,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1701,7 +1701,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1711,7 +1711,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1721,7 +1721,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1731,7 +1731,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.Tm.SAP.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=Tm.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.Tm.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.Tm.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=Tm.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1741,7 +1741,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1751,7 +1751,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1761,7 +1761,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1771,7 +1771,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1781,7 +1781,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO.SAP replicate=Rep1 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1791,7 +1791,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.all.counts
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO.SAP replicate=Rep2 signal=counts
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1801,7 +1801,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep1.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO.SAP replicate=Rep1 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep1.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep1
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=all replicate=Rep1
             maxHeightPixels 30:30:10
@@ -1811,7 +1811,7 @@ longLabel mRNA gene models and analysis
             track delXrn1.DMSO.SAP.Rep2.all.CPMs
             parent 5OH-Coverage
             subGroups view=COV strain=delXrn1 strand=all treatment=DMSO.SAP replicate=Rep2 signal=CPMs
-            bigDataUrl 5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
+            bigDataUrl rna/5OH/5OH/delXrn1.DMSO.SAP.Rep2.align.std.strand.all.counts.bw
             shortLabel delXrn1.DMSO.SAP.Rep2
             longLabel 5OH-seq coverage strain=delXrn1 treatment=DMSO.SAP strand=all replicate=Rep2
             maxHeightPixels 30:30:10
@@ -1830,7 +1830,7 @@ longLabel mRNA gene models and analysis
         parent AminoAcidMotifs on
         shortLabel Acidic
         visibility dense
-        bigDataUrl aa_motifs/aa_acidic.bb
+        bigDataUrl rna/5OH/aa_motifs/aa_acidic.bb
         type bigBed 6
         color 226,28,26
 
@@ -1838,7 +1838,7 @@ longLabel mRNA gene models and analysis
         parent AminoAcidMotifs on
         visibility dense
         shortLabel Basic
-        bigDataUrl aa_motifs/aa_basic.bb
+        bigDataUrl rna/5OH/aa_motifs/aa_basic.bb
         type bigBed 6
         color 55,126,184
 
@@ -1846,7 +1846,7 @@ longLabel mRNA gene models and analysis
         parent AminoAcidMotifs on
         visibility dense
         shortLabel Electrostatic
-        bigDataUrl aa_motifs/aa_charged.bb
+        bigDataUrl rna/5OH/aa_motifs/aa_charged.bb
         type bigBed 6
         color 152,78,163
 
@@ -1854,10 +1854,9 @@ longLabel mRNA gene models and analysis
         parent AminoAcidMotifs on
         visibility dense
         shortLabel Other
-        bigDataUrl aa_motifs/aa_etc.bb
+        bigDataUrl rna/5OH/aa_motifs/aa_etc.bb
         type bigBed 6
         color 153,153,153
-
 
 
 track Lab-data 
