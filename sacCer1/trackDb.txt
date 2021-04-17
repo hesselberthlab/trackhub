@@ -1820,6 +1820,7 @@ longLabel mRNA gene models and analysis
 
     track AminoAcidMotifs
     compositeTrack on
+    parent 5OH-seq
     shortLabel AaMotifs 
     longLabel Amino Acid motifs 
     type bigBed 6
